@@ -1,5 +1,5 @@
 {
-  "name": "reactApp",
+  "name": "reactapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest --config jest.config.ts"
+    "test": "jest",
+    "detox:android_build": "detox build --configuration android.emu.debug",
+    "detox:android_test": "detox test --configuration android.emu.debug"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
@@ -42,9 +44,9 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
+    "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.25.3",
-    "@babel/runtime": "^7.25.0",
+    "@babel/runtime": "^7.28.4",
     "@react-native-community/cli": "20.0.0",
     "@react-native-community/cli-platform-android": "20.0.0",
     "@react-native-community/cli-platform-ios": "20.0.0",
@@ -58,8 +60,10 @@
     "@types/node": "^24.9.1",
     "@types/react": "^19.1.1",
     "@types/react-test-renderer": "^19.1.0",
+    "detox": "^20.45.1",
     "eslint": "^8.19.0",
     "jest": "^29.7.0",
+    "jest-circus": "^30.2.0",
     "prettier": "2.8.8",
     "react-test-renderer": "19.1.1",
     "typescript": "^5.8.3"
