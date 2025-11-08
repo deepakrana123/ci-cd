@@ -87,6 +87,10 @@ android {
         testBuildType System.getProperty('testBuildType', 'debug')
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
+    packagingOptions {
+    pickFirst "**/*.so"
+}
+    testBuildType "debug"
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
