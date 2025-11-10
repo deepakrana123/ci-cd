@@ -10,17 +10,14 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    // <Provider store={store}>
-    //   <PersistGate loading={null} persistor={persistor}>
-    //     <SafeAreaProvider>
-    //       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-    //       <Navigation />
-    //     </SafeAreaProvider>
-    //   </PersistGate>
-    // </Provider>
-    <View>
-      <Text>How are you</Text>
-    </View>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <SafeAreaProvider>
+          <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+          <Navigation />
+        </SafeAreaProvider>
+      </PersistGate>
+    </Provider>
   );
 };
 

@@ -1,10 +1,16 @@
 import React, { FC, useEffect } from 'react';
-import { View, StyleSheet, ActivityIndicator, Image } from 'react-native';
+import { View, StyleSheet, ActivityIndicator, Image, Text } from 'react-native';
 import logo from '../assets/images/logo.png';
 import { prepareNavigation, resetAndNavigate } from '../utils/NavigationUtil';
-
+import { NativeModules } from 'react-native';
+const { Detox } = NativeModules;
 const SplashScreen: FC = () => {
+  const isDetox = !!Detox;
   useEffect(() => {
+    console.log('Detox Mode ', isDetox);
+    if (isDetox) {
+      return;
+    }
     prepareNavigation();
     setTimeout(() => {
       resetAndNavigate('OnBoardingScreen');

@@ -91,6 +91,7 @@ const RegisterScreen: React.FC = () => {
           onFocus={() => handleError(null, 'first_name')}
           placeholder="First name"
           error={errors.first_name}
+          testID={'first_name'}
         />
         <Input
           value={inputs.last_name}
@@ -98,6 +99,7 @@ const RegisterScreen: React.FC = () => {
           onFocus={() => handleError(null, 'last_name')}
           placeholder="Last name"
           error={errors.last_name}
+          testID={'last_name'}
         />
         <Input
           value={inputs.email}
@@ -105,6 +107,7 @@ const RegisterScreen: React.FC = () => {
           onFocus={() => handleError(null, 'email')}
           placeholder="Email"
           error={errors.email}
+          testID={'email'}
         />
         <Input
           value={inputs.password}
@@ -113,6 +116,7 @@ const RegisterScreen: React.FC = () => {
           placeholder="Password"
           error={errors.password}
           secureTextEntry
+          testID={'password'}
         />
         <CustomButton
           title="Sign Up"

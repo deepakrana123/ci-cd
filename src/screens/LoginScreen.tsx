@@ -72,12 +72,13 @@ const LoginScreen: React.FC = () => {
   return (
     <CustomSafeAreaViewScroll>
       <CustomHeading title="Login" />
-      <View style={styles.inputContainer}>
+      <View style={styles.inputContainer} testID="LoginScreen">
         <Input
           value={inputs.email}
           onChangeText={text => handleOnChange(text, 'email')}
           onFocus={() => handleError(null, 'email')}
           placeholder="Email"
+          testID="email"
           error={errors.email}
         />
         <Input
@@ -86,6 +87,7 @@ const LoginScreen: React.FC = () => {
           onFocus={() => handleError(null, 'password')}
           placeholder="Password"
           error={errors.password}
+          testID="password"
           secureTextEntry
         />
         <CustomButton
