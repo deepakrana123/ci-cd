@@ -4,12 +4,10 @@
     "jsx": "react",
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
     "allowJs": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "ignoreDeprecations": "6.0",
     "forceConsistentCasingInFileNames": true
   },
   "exclude": [

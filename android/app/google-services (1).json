@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423089870956",
+    "project_id": "ci-cd-2ad7a",
+    "storage_bucket": "ci-cd-2ad7a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423089870956:android:c855941bdb8e178ea96049",
+        "android_client_info": {
+          "package_name": "ci_cd.Devendr123"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9KGiLsqFSxBqBY0OkKx_uGF0GPyQyjUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
