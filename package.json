@@ -14,7 +14,7 @@
     "test": "jest",
     "detox:android_build": "detox build --configuration android.emu.debug",
     "detox:android_test": "detox test --configuration android.emu.debug",
-    "prepare": "husky install"
+    "prepare": "husky install || true"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
